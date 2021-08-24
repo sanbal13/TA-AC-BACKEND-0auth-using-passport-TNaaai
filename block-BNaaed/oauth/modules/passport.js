@@ -12,7 +12,24 @@ passport.use(new GoogleStrategy({
 },
 ((token, tokenSecret, profile, done) => {
   console.log(profile);
-  User.findOrCreate({ googleId: profile.id }, (err, user) => done(err, user));
+  const profileData = {
+    googleId: profile.id,
+    name: profile.displayName,
+  };
+  User.findOne({ googleId: profile.id }, (err, user) => {
+    if (err) {
+      return done(err);
+    }
+    if (!user) {
+      User.create(profileData, (err, addedUser) => {
+        if (err) {
+          return done(err);
+        }
+        return done(null, addedUser);
+      });
+    }
+    return done(null, user);
+  });
 })));
 
 passport.use(new GitHubStrategy({
