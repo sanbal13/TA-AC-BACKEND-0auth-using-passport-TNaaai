@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*************************** Custom Styles begins here ********************/
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-right: .2rem;
+  background-color: #00B7FF;
+  color: brown;
+  font-weight: 700;
+  padding: .5rem .7rem;
+  border-radius: .5rem;
+  box-shadow: 1px 1px 1px grey; 
+}
+.button:hover {
+  background-color: #0481b3;
+  color: rgb(224, 220, 220);
+}
+/************************* Flex *************************/
+.flex {
+   display: flex;
+   justify-content: space-around;
+}
+/************************* Headings *************************/
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+.authentication-pass-message {
+  color: green;
+  background-color: aqua;
+}
+.authentication-fail-message {
+  color: red;
+  background-color: aqua;
+}
+/************************* Login Page *************************/
+.login-heading {
+  border-bottom: 1px solid red;
+  padding-bottom: .5rem;
+}
+.index-body {
+  background-image: url('/images/secure.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -20rem;  
+}
+.login {
+  width: 20rem;
+  background-color: rgba(0, 0, 0, .3);
+  padding: 1rem;
+  margin: 7.5rem 30rem;
+  color: yellow;
+}
+.login-hr {
+  margin: 2rem 0;
+}
+.or {
+  position: relative;
+  top: -2.5rem;
+  left: 8rem;
+  background-color: rgba(255, 0, 0);
+  padding: .5rem;
+  font-weight: 700;
+}
+.form-control {  
+  width: 100%;
+}
+input {
+  margin-bottom: 1rem;
+  margin-top: .3rem;
+  padding: .5rem;
+}
+
+.credits {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color:rgba(0, 0, 0, .5);
+}
+.forgot-password {
+    color: aqua;  
+}
+.form-button {
+  background-color: green;
+  font-weight: 700;
+}
+.form-button:hover {
+  background-color: rgb(5, 189, 5);
+}
+.register-form {
+  background-color: rgba(173, 255, 47, .5);
+  width: 20rem;
+  padding: 1rem;
+  margin: 0 auto;
+  box-shadow: 1px 1px 10px green;
+}
+label {
+  display: block;
+}
+.form-header {
+  border-bottom: 1px solid grey;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+}
+
+
+
